@@ -118,3 +118,6 @@ You can find the Delivery and other SDKs at <https://github.com/kontent-ai>.
 ## Deployment
 
 You can use, for example, [surge](http://surge.sh/) to deploy your app live. Check out the step-by-step guide on our [blog](https://kontent.ai/blog/3-steps-to-rapidly-deploy-headless-single-page-app).
+
+## Lessons Learned
+
