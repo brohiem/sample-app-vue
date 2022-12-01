@@ -121,61 +121,68 @@ You can use, for example, [surge](http://surge.sh/) to deploy your app live. Che
 
 ## Lessons Learned
 
-  •	How would a customer implement 3rd party search capabilities to a Kontent by Kentico project?
-    One example would be Algolia
+1. __How would a customer implement 3rd party search capabilities to a Kontent by Kentico project?__<br>
+    
+    One example would be Algolia<br>
     - Algolia (https://kontent.ai/blog/searching-content-kentico-kontent-algolia-integration/)
-    - APP_ID: X82SSYBT3O 
-    - SEARCH_API_KEY: eed91f483a1bd5ccef646a09f85b3c56
-    - ADMIN_API_KEY: ################################
     
     Steps: 
-    1) Need the data to be indexed in JSON format
-    2) Import & Index data in Algolia
-    3) Add SDK to client 
-    4) Call the index with search bar parameters
+      1) Need the data to be indexed in JSON format
+      2) Import & Index data in Algolia
+      3) Add SDK to client  
+      4) Call the index with the app id and search bar parameters
 
-  •	How would a customer implement personalization/analytics (tracking) capabilities?
+2. __How would a customer implement personalization/analytics (tracking) capabilities?__
+    
+    One example would be Google Analytics<br>
     - GA (https://kontent.ai/learn/tutorials/develop-apps/integrate/google-analytics/)
 
-  •	What is JAMstack, and what are the pros and cons of SSG?
-    - JavaScript, API's, Markup
-    - Static Site Generators:
-      Pros:
-          By delivering an app from a static hosting platform, you’re:
-          Limiting the number of moving pieces required to deliver that app
-          Exposing fewer attack surfaces for bad actors
-          Providing an app that will infinitely scale, suffering from less downtime
-          Delivering the website fast as its mostly static files
-          Spending less money on hosting
-      Cons:
-          You need multiple tools and services to accomplish the same result you would get with a coupled solution (e.g. WP, Drupal)
-          You’ll also need to think about your frontend and your backend separately since those are decoupled.
+3. __What is JAMstack, and what are the pros and cons of SSG?__<br>
+  
+    The JAMstack = JavaScript, API's, Markup<br>
+    SSG = Static Site Generators
 
-  •	What is a "headless CMS" and what are some of its advantages and disadvantages?      
-      Pros:
-        Omnichannel Architecture  - Headless CMS provides the capabilities to deliver engaging content with consistency at all touch points.
-        Higher Flexibility        - Headless CMS offers the freedom to build your frontend with whatever language, framework, or tool you want. As Headless CMS is API-driven, it lets you choose what fits your business.
-        Cost-Effective            - Users can directly access CMS and start building mini-sites or pages when required. Thus it reduces the overall costs for development.
-        Enhanced Security         - The presentation layer is not connected to the database, users do not have to worry about the security issues of one layer affecting the other. (e.g. WP)
-        Easily Scalable           - The hosting options and deployment environment in Headless CMS are infinite.
-        Focus on Business         - You don't have to manage the web sites and plugins anymore.  You can focus on delivering quality content to your consumers. 
-      Cons:
+    **Pros**:
+          
+          • Limiting the number of moving pieces required to deliver that app
+          • Exposing fewer attack surfaces for bad actors
+          • Providing an app that will infinitely scale, suffering from less downtime
+          • Delivering the website fast as its mostly static files
+          • Spending less money on hosting
+          
+    **Cons**:
+      
+          • You need multiple tools and services to accomplish the same result you would get with a coupled solution (e.g. WP, Drupal)
+          • You’ll also need to think about your frontend and your backend separately since those are decoupled.
+
+4. __What is a "headless CMS" and what are some of its advantages and disadvantages?__
+
+    **Pros**:
+      
+        • Omnichannel Architecture  - Headless CMS provides the capabilities to deliver engaging content with consistency at all touch points.
+        • Higher Flexibility        - Headless CMS offers the freedom to build your frontend with whatever language, framework, or tool you want. As Headless CMS is API-driven, it lets you choose what fits your business.
+        • Cost-Effective            - Users can directly access CMS and start building mini-sites or pages when required. Thus it reduces the overall costs for development.
+        • Enhanced Security         - The presentation layer is not connected to the database, users do not have to worry about the security issues of one layer affecting the other. (e.g. WP)
+        • Easily Scalable           - The hosting options and deployment environment in Headless CMS are infinite.
+        • Focus on Business         - You don't have to manage the web sites and plugins anymore.  You can focus on delivering quality content to your consumers.
+        
+    **Cons**:
+      
         * Same as with SSG
-        You need multiple tools and services to accomplish the same result you would get with a coupled solution (e.g. WP, Drupal)
-        You’ll also need to think about your frontend and your backend separately since those are decoupled.
+        • You need multiple tools and services to accomplish the same result you would get with a coupled solution (e.g. WP, Drupal)
+        • You’ll also need to think about your frontend and your backend separately since those are decoupled.
 
-
-  •	Explain the differences between a Content Type, Content Item, and Content Item Variant
-    Content Type: This would be the type of content such as an Article or Blog post.
-    Content Item: This would be the article itself, composed of parts such as the title, summary, body, slug, etc. 
+5. __Explain the differences between a Content Type, Content Item, and Content Item Variant...__<br>
+    Content Type: This would be the type of content such as an Article or Blog post.<br>
+    Content Item: This would be the article itself, composed of parts such as the title, summary, body, slug, etc.<br>
     Content Item Variant: Variants are localized versions of content items.
 
-  •	What is the difference between a Linked Item and a Component in Kontent by Kentico?
-    A linked item lets you define relationships between your content.  Where as a Component is a single-use piece of content added to a rich text element.
+6. __What is the difference between a Linked Item and a Component in Kontent by Kentico?__<br>
+    A linked item lets you define relationships between your content.  Where as a Component is a single-use piece of content added to a rich text element.<br>
     From the manual... For content that doesn't need to be reused in multiple places, we recommend you use content components.
 
-  •	What is the difference between the Delivery API and Management API and how would you use them in a real project?
-    2 different API's designed and built for 2 different purposes. One is for adding and editing content the other is purely for reading the content.
+7. __What is the difference between the Delivery API and Management API and how would you use them in a real project?__<br>
+    These are two different API's designed and built for 2 different purposes. The names self explanitory.  One is for adding and editing content the other is purely for reading the content.
 
-  •	What is the Preview Delivery API and when would you use it?
+8. __What is the Preview Delivery API and when would you use it?__<br>
     It provides access to un-published content. This is valuable to access during the editing and approval cycle.
