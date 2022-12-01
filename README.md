@@ -124,8 +124,7 @@ You can use, for example, [surge](http://surge.sh/) to deploy your app live. Che
   #### Netlify (Deployment) 
     
     Initally deployed to Netlify manually and kept getting 404 on the non home page routes.
-    Instead I pushed it to a repo in my Github account
-    Then I deployed into Netlify by importing it from the Github repo.
+    Instead I pushed it to a repo in my Github account and deployed from there.
 
   #### Kontent (Article)
     It was easy to create an article, especially in the sample project with predefined content types.  I was surprised to learn that I couldn't embed html or scripting into the article out-of-the-box. I ended up using the YouTube video extension. I was able to get it to work in design mode. The next step would be to customize the Article.Vue component to include the custom element.</p>
